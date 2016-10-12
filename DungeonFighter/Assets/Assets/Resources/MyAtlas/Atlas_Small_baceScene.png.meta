@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: af0ec9878e74f584dab786a853dcdf9b
+timeCreated: 1476254011
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Atlas_Small_baceScene_0
+    21300002: Atlas_Small_baceScene_1
+    21300004: Atlas_Small_baceScene_2
+    21300006: Atlas_Small_baceScene_3
+    21300008: Atlas_Small_baceScene_4
+    21300010: Atlas_Small_baceScene_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Atlas_Small_baceScene_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 165
+        width: 100
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 43}
+        - {x: -50, y: -43}
+        - {x: 50, y: -43}
+        - {x: 50, y: 43}
+    - name: Atlas_Small_baceScene_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 244
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122, y: 23.5}
+        - {x: -122, y: -19.5}
+        - {x: -119, y: -23.5}
+        - {x: 117, y: -23.5}
+        - {x: 122, y: -20.5}
+        - {x: 122, y: 14.5}
+        - {x: 110, y: 23.5}
+    - name: Atlas_Small_baceScene_2
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 122
+        width: 171
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.5, y: 16}
+        - {x: -85.5, y: -16}
+        - {x: 83.5, y: -16}
+        - {x: 85.5, y: -10}
+        - {x: 85.5, y: 16}
+    - name: Atlas_Small_baceScene_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 72
+        width: 380
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -153, y: -13.5}
+        - {x: -155, y: -15.5}
+        - {x: -155, y: -17.5}
+        - {x: -146, y: -17.5}
+        - {x: -145, y: -16.5}
+        - {x: -146, y: -13.5}
+      - - {x: 145, y: -15.5}
+        - {x: 146, y: -17.5}
+        - {x: 150, y: -17.5}
+        - {x: 151, y: -16.5}
+        - {x: 150, y: -13.5}
+        - {x: 147, y: -13.5}
+      - - {x: 156, y: -17.5}
+        - {x: 156, y: -15.5}
+        - {x: 153, y: -14.5}
+        - {x: 151, y: -17.5}
+      - - {x: -190, y: 17.5}
+        - {x: -190, y: -10.5}
+        - {x: -184, y: -17.5}
+        - {x: 189, y: -17.5}
+        - {x: 190, y: -14.5}
+        - {x: 190, y: 17.5}
+    - name: Atlas_Small_baceScene_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 7
+        width: 224
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -112, y: 26.5}
+        - {x: -112, y: -26.5}
+        - {x: 112, y: -26.5}
+        - {x: 112, y: 26.5}
+    - name: Atlas_Small_baceScene_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 6
+        width: 206
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
