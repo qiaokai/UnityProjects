@@ -70,6 +70,9 @@
      <Compile Include="Assets\Assets\Resources\Models\Maps\VW_ActionRPG_AssetPack\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
      <Compile Include="Assets\Assets\Scripts\Control\Scenes\Ctrl_StartScenes.cs" />
      <Compile Include="Assets\Assets\Scripts\Global\FadeInAndOut.cs" />
+     <Compile Include="Assets\Assets\Scripts\Global\GlobalParams.cs" />
+     <Compile Include="Assets\Assets\Scripts\Kernal\AudioManager.cs" />
+     <Compile Include="Assets\Assets\Scripts\View\Scenes\View_LoadingScenes.cs" />
      <Compile Include="Assets\Assets\Scripts\View\Scenes\View_StartScenes.cs" />
      <None Include="Assets\Assets\Resources\Models\Maps\VW_ActionRPG_AssetPack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Assets\Resources\Models\Maps\VW_ActionRPG_AssetPack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />

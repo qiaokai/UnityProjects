@@ -20,55 +20,61 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public class FadeInAndOut : MonoBehaviour {
-	public static FadeInAndOut Instance;
+namespace Global {
+	
+	public class FadeInAndOut : MonoBehaviour {
+		public static FadeInAndOut Instance;
 
-	public GameObject rawImage;
-	public float ColorChangeSpeed = 1f;
-	private RawImage _RawImage;
-	private bool _BoolScenesToClear = true;
-	private bool _BoolScenesToBlack = false;
+		public GameObject rawImage;
+		public float ColorChangeSpeed = 1f;
+		private RawImage _RawImage;
+		private bool _BoolScenesToClear = true;
+		private bool _BoolScenesToBlack = false;
 
-	void Awake () {
-		Instance = this;
-
-		if (rawImage == null) {
-			_RawImage = rawImage.GetComponent<RawImage> ();
-		
+		void Awake () {
+			Instance = this;
+			if (_RawImage == null) {
+				_RawImage = rawImage.GetComponent<RawImage> ();
+			}
 		}
-	}
 
-	private void ScenesToClear () {
-		if (_RawImage.color.a > 0.05) {
-			_RawImage.color = Color.Lerp (_RawImage.color, Color.clear, ColorChangeSpeed * Time.deltaTime);
-		} else {
-			_RawImage.color = Color.clear;
+		private void ScenesToClear () {
+			if (_RawImage.color.a > 0.05) {
+				_RawImage.enabled = true;
+				_RawImage.color = Color.Lerp (_RawImage.color, Color.clear, ColorChangeSpeed * Time.deltaTime);
+			} else {
+				_RawImage.color = Color.clear;
+				_BoolScenesToClear = false;
+				_RawImage.enabled = false;
+			}
+		}
+
+		private void ScenesToBlack () {
+			if (_RawImage.color.a < 0.95) {
+				_RawImage.enabled = true;
+				_RawImage.color = Color.Lerp (_RawImage.color, Color.black, ColorChangeSpeed * Time.deltaTime);
+			} else {
+				_RawImage.color = Color.black;
+				_BoolScenesToBlack = false;
+			}
+		}
+
+		public void FadeToClear () {
+			_BoolScenesToClear = true;
+			_BoolScenesToBlack = false;
+		}
+
+		public void FadeToBlack () {
+			_BoolScenesToBlack = true;
 			_BoolScenesToClear = false;
 		}
-	}
 
-	private void ScenesToBlack () {
-		if (_RawImage.color.a < 0.95) {
-			_RawImage.color = Color.Lerp (_RawImage.color, Color.black, ColorChangeSpeed * Time.deltaTime);
-		} else {
-			_RawImage.color = Color.black;
-			_BoolScenesToBlack = false;	
-		}
-	}
-
-	public void FadeToClear () {
-		_BoolScenesToClear = true;
-	}
-
-	public void FadeToBlack () {
-		_BoolScenesToBlack = true;
-	}
-
-	void Update () {
-		if (_BoolScenesToClear) {
-			ScenesToClear ();
-		} else if (_BoolScenesToBlack) {
-			ScenesToBlack ();
+		void Update () {
+			if (_BoolScenesToClear) {
+				ScenesToClear ();
+			} else if (_BoolScenesToBlack) {
+				ScenesToBlack ();
+			}
 		}
 	}
 }
