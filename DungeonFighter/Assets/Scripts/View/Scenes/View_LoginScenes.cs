@@ -22,6 +22,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using Control;
+using Global;
 
 namespace View {
 	
@@ -32,12 +33,18 @@ namespace View {
 		public GameObject ui_Magic;
 		public InputField input_UserName;
 
+		void Start () {
+			GlobalParams.PlayerType = PlayerTypes.SwordHero;
+		}
+
 		public void ChangeToSwordHero () {
 			hero_Sword.SetActive (true);
 			hero_Magic.SetActive (false);
 
 			ui_Sword.SetActive (true);
 			ui_Magic.SetActive (false);
+
+			Ctrl_LoginScenes.Instance.PlayAudioEffactBySword ();
 		}
 
 		public void ChangeToMagicHero () {
@@ -46,12 +53,17 @@ namespace View {
 
 			ui_Magic.SetActive (true);
 			ui_Sword.SetActive (false);
+
+			Ctrl_LoginScenes.Instance.PlayAudioEffactByMagic ();
+
+			GlobalParams.PlayerType = PlayerTypes.MagicHero;
 		}
 
 		public void SubmitInfo () {
 			string username = input_UserName.text;
 			//跳转到下一个场景
 			Ctrl_LoginScenes.Instance.StartNextScenes ();
+			print ("" + GlobalParams.PlayerType);
 		}
 	}
 }

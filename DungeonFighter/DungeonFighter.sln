@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{FB97EF10-523D-94C4-11C6-70736E5F6FA7}") = "DungeonFighter", "Assembly-CSharp.csproj", "{AF3CEF6D-207B-CD7D-4C1A-801239B2BE39}"
 EndProject
+Project("{FB97EF10-523D-94C4-11C6-70736E5F6FA7}") = "DungeonFighter", "Assembly-CSharp-Editor.csproj", "{01CAFA35-F532-5528-0332-FC498B1A314F}"
+EndProject
 Project("{FB97EF10-523D-94C4-11C6-70736E5F6FA7}") = "DungeonFighter", "Assembly-UnityScript.unityproj", "{248FE3EA-10F5-E2E6-A5B2-2C2DA22D283B}"
 EndProject
 Project("{FB97EF10-523D-94C4-11C6-70736E5F6FA7}") = "DungeonFighter", "Assembly-UnityScript-Editor.unityproj", "{9D56EE2E-103A-0D45-93B5-04050FA4517C}"
@@ -17,6 +19,10 @@ Global
 		{AF3CEF6D-207B-CD7D-4C1A-801239B2BE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF3CEF6D-207B-CD7D-4C1A-801239B2BE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF3CEF6D-207B-CD7D-4C1A-801239B2BE39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CAFA35-F532-5528-0332-FC498B1A314F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CAFA35-F532-5528-0332-FC498B1A314F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CAFA35-F532-5528-0332-FC498B1A314F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CAFA35-F532-5528-0332-FC498B1A314F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{248FE3EA-10F5-E2E6-A5B2-2C2DA22D283B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{248FE3EA-10F5-E2E6-A5B2-2C2DA22D283B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{248FE3EA-10F5-E2E6-A5B2-2C2DA22D283B}.Release|Any CPU.ActiveCfg = Release|Any CPU
